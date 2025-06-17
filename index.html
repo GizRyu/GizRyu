@@ -24,17 +24,9 @@
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
     }
 
-    header h1 {
-      font-size: 3rem;
-      letter-spacing: 2px;
-      font-weight: 800;
-      background: linear-gradient(90deg, #7de3ff, #b1f8f1);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow:
-        0 0 5px rgba(125, 227, 255, 0.6),
-        0 0 10px rgba(125, 227, 255, 0.4),
-        0 0 20px rgba(125, 227, 255, 0.3);
+    .logo {
+      width: 320px;
+      margin-bottom: 10px;
       opacity: 0;
       animation: fadeInUp 1.2s ease-out forwards;
     }
@@ -129,7 +121,7 @@
 </head>
 <body>
   <header>
-    <h1>GizRyu LAB</h1>
+    <img src="gizryu-logo.png" alt="GizRyu LAB ロゴ" class="logo" />
     <nav>
       <ul class="nav-menu">
         <li><a href="#">Home</a></li>
@@ -140,14 +132,17 @@
       </ul>
     </nav>
   </header>
+
   <div class="hero">
     <img src="your-illustration.png" alt="Gizmoとリュウのラボ風景" />
   </div>
+
   <section class="intro">
     <p>
       ようこそ、<strong>GizRyu LAB</strong>へ。ここは静かに何かが生まれていく、未来と空想の空中工房です。
     </p>
   </section>
+
   <footer>
     &copy; 2025 GizRyu LAB. All rights reserved.
   </footer>
