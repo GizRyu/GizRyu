@@ -32,6 +32,9 @@ header h1 {
     0 0 5px rgba(125, 227, 255, 0.6),
     0 0 10px rgba(125, 227, 255, 0.4),
     0 0 20px rgba(125, 227, 255, 0.3);
+  
+  opacity: 0;
+  animation: fadeInUp 1.2s ease-out forwards;
 }
 
 .hero {
@@ -86,6 +89,16 @@ nav {
 .nav-menu li a:hover {
   color: #ffffff;
 }
+    @keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+    }
   </style>
 </head>
 <body>
