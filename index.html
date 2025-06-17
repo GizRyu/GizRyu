@@ -117,11 +117,29 @@
         transform: translateY(0);
       }
     }
+    /* パルスアニメ用ロゴスタイル */
+.neon-logo {
+  width: 300px;
+  animation: pulseGlow 2s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 4px #7de3ff)
+            drop-shadow(0 0 10px #7de3ff)
+            drop-shadow(0 0 20px #7de3ff);
+  }
+  50% {
+    filter: drop-shadow(0 0 2px #7de3ff)
+            drop-shadow(0 0 5px #7de3ff)
+            drop-shadow(0 0 10px #7de3ff);
+  }
+}
   </style>
 </head>
 <body>
   <header>
-    <img src="gizryu-logo.png" alt="GizRyu LAB ロゴ" class="logo" />
+    <img src="gizryu-logo.png" class="neon-logo" alt="GizRyu LAB ロゴ" class="logo" />
     <nav>
       <ul class="nav-menu">
         <li><a href="#">Home</a></li>
