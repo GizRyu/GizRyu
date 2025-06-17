@@ -119,8 +119,12 @@
     }
     /* パルスアニメ用ロゴスタイル */
 .neon-logo {
-  width: 300px;
+  width: 100%;
+  max-width: 500px;
+  marjin: 0 auto 10px;
+  display: block;
   animation: pulseGlow 2s infinite ease-in-out;
+  opacity: 0;
 }
 
 @keyframes pulseGlow {
