@@ -176,10 +176,42 @@
         transform: translate(-1px, 1px) rotate(-0.5deg);
       }
     }
+    .neon-title {
+  font-size: 3rem;
+  color: #7de3ff;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow:
+    0 0 5px #7de3ff,
+    0 0 10px #7de3ff,
+    0 0 20px #00e6ff,
+    0 0 40px #00e6ff,
+    0 0 80px #00e6ff;
+  animation: flicker 2.5s infinite alternate;
+  margin: 0;
+  padding: 1rem;
+    }
+    @keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    opacity: 1;
+    text-shadow:
+      0 0 5px #7de3ff,
+      0 0 10px #7de3ff,
+      0 0 20px #00e6ff,
+      0 0 40px #00e6ff,
+      0 0 80px #00e6ff;
+  }
+  20%, 24%, 55% {
+    opacity: 0.6;
+    text-shadow: none;
+  }
+    }
   </style>
 </head>
 <body>
   <header>
+    <h1 class="neon-title">GizRyu LAB</h1>
     <img src="gizryu-logo.png" class="neon-logo" alt="GizRyu LAB ロゴ" />
     <nav>
       <ul class="nav-menu">
