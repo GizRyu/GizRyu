@@ -40,7 +40,7 @@
     .nav-menu {
       list-style: none;
       display: flex;
-      flex-wrap: wrap; /* 折り返しOKにすることで小さい画面にも対応 */
+      flex-wrap: wrap;
       gap: 1rem;
       padding: 0;
       margin: 0;
@@ -130,36 +130,17 @@
         transform: translateY(0);
       }
     }
+
     .neon-logo {
-      @keyframes zapEffect {
-  0%, 97%, 100% {
-    filter: drop-shadow(0 0 10px #7de3ff);
-    transform: translate(0, 0);
-  }
-  98% {
-    filter:
-      drop-shadow(0 0 8px #ffffff)
-      drop-shadow(0 0 20px #7de3ff)
-      drop-shadow(0 0 40px #00ffff);
-    transform: translate(1px, -1px) rotate(0.5deg);
-  }
-  99% {
-    filter:
-      drop-shadow(0 0 10px #ffffff)
-      drop-shadow(0 0 30px #7de3ff)
-      drop-shadow(0 0 60px #00ffff);
-    transform: translate(-1px, 1px) rotate(-0.5deg);
-  }
-      }
-  width: 100%;
-  max-width: 700px;
-  margin: 0 auto 10px;
-  display: block;
-  animation:
-    fadeInUp 1.2s ease-out forwards,
-    pulseGlow 2s infinite ease-in-out,
-    zapEffect 3s infinite steps(1); /* ← ここがバチバチ電撃エフェクト */
-  opacity: 0;
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto 10px;
+      display: block;
+      animation:
+        fadeInUp 1.2s ease-out forwards,
+        pulseGlow 2s infinite ease-in-out,
+        zapEffect 3s infinite steps(1);
+      opacity: 0;
     }
 
     @keyframes pulseGlow {
@@ -172,6 +153,27 @@
         filter: drop-shadow(0 0 2px #7de3ff)
                 drop-shadow(0 0 5px #7de3ff)
                 drop-shadow(0 0 10px #7de3ff);
+      }
+    }
+
+    @keyframes zapEffect {
+      0%, 97%, 100% {
+        filter: drop-shadow(0 0 10px #7de3ff);
+        transform: translate(0, 0);
+      }
+      98% {
+        filter:
+          drop-shadow(0 0 8px #ffffff)
+          drop-shadow(0 0 20px #7de3ff)
+          drop-shadow(0 0 40px #00ffff);
+        transform: translate(1px, -1px) rotate(0.5deg);
+      }
+      99% {
+        filter:
+          drop-shadow(0 0 10px #ffffff)
+          drop-shadow(0 0 30px #7de3ff)
+          drop-shadow(0 0 60px #00ffff);
+        transform: translate(-1px, 1px) rotate(-0.5deg);
       }
     }
   </style>
