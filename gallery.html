@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GizRyu LAB Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('metal-bg.jpg') center/cover no-repeat;
+      color: #f0f0f0;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 2rem 1rem 1rem;
+      text-align: center;
+      box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.6);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      text-shadow: 0 0 10px #0ff;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .category-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: pointer;
+    }
+
+    .category-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0 12px #0ff;
+    }
+
+    .category-card h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GizRyu LAB Gallery</h1>
+    <p>創作を助ける素材がここに集結！</p>
+  </header>
+
+  <main class="gallery-grid">
+    <div class="category-card"><h2>日常アイテム</h2></div>
+    <div class="category-card"><h2>武器・防具</h2></div>
+    <div class="category-card"><h2>アクセサリー</h2></div>
+    <div class="category-card"><h2>洋服パーツ</h2></div>
+    <div class="category-card"><h2>表情・顔パーツ</h2></div>
+    <div class="category-card"><h2>魔法・エフェクト</h2></div>
+    <div class="category-card"><h2>背景・建物</h2></div>
+    <div class="category-card"><h2>UI・アイコン</h2></div>
+    <div class="category-card"><h2>その他素材</h2></div>
+  </main>
+</body>
+</html>
