@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GizRyu ART Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('metal-bg.jpg') center/cover no-repeat fixed;
+      color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(2px);
+      width: 100%;
+      padding: 1.5rem 1rem 1rem;
+      text-align: center;
+      box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.6);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      color: #7de3ff;
+      text-shadow: 0 0 8px #00e6ff;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      padding: 2rem 1rem;
+      max-width: 1200px;
+    }
+
+    .art-card {
+      background-color: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(3px);
+      border: 2px solid #7de3ff44;
+      border-radius: 12px;
+      padding: 1rem;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .art-card:hover {
+      transform: scale(1.03);
+    }
+
+    .art-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+    }
+
+    .art-card p {
+      color: #cfd8dc;
+      font-size: 1rem;
+    }
+
+    footer {
+      margin-top: 2rem;
+      padding: 1rem;
+      color: #78909c;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GizRyu ART Gallery</h1>
+  </header>
+
+  <div class="gallery-container">
+    <div class="art-card">
+      <img src="abstract1.jpg" alt="弾ける閃き" />
+      <p>弾ける閃き / Spark of Color</p>
+    </div>
+    <div class="art-card">
+      <img src="abstract2.jpg" alt="静寂の中で" />
+      <p>静寂の中で / Serenity Within</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 GizRyu LAB - ART Gallery
+  </footer>
+</body>
+</html>
